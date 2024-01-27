@@ -8,6 +8,10 @@
   margin-block: 64px 128px;
   border-radius: 64px;
 
+  &:hover .img {
+    transform: translateY(-20px);
+  } 
+
   .content {
     grid-area: text;
     max-width: 610px;
@@ -17,6 +21,7 @@
     grid-area: img;
     width: 364px;
     height: 416px;
+    transition: .2s;
   }
 }
 

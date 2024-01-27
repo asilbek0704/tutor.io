@@ -5,13 +5,13 @@ import { MessageBtn } from "../../components/MessageBtn/MessageBtn";
 // import { Profile } from "../../components/Profile/Profile";
 import { SearchForm } from "../../components/SearchForm/SearchForm";
 import { SignBtn } from "../../components/SignBtn/SignBtn";
-import { Container } from "../Container/Container";
+import { ContainerExtra } from "../Container/ContainerExtra/ContainerExtra";
 import s from "./Header.module.scss";
 
 export const Header = () => {
   return (
     <header className={s.header}>
-      <Container className={s.headerContainer}>
+      <ContainerExtra className={s.headerContainer}>
         <div className={s.left}>
           <Logo className={s.logo} />
           <MessageBtn className={s.message} />
@@ -28,7 +28,7 @@ export const Header = () => {
           {/* <Profile className={s.profile} /> */}
         </div>
         
-      </Container>
+      </ContainerExtra>
     </header>
   );
 };
