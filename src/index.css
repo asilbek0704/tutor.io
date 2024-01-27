@@ -1,4 +1,4 @@
-@font-face { 
+@font-face {
   font-family: "Nexa";
   font-style: normal;
   font-weight: 800;
@@ -12,7 +12,6 @@
   src: url("/fonts/Nexa-Trial-Bold.ttf");
 }
 
-
 @font-face {
   font-family: "Nexa";
   font-style: normal;
@@ -20,7 +19,7 @@
   src: url("/fonts/Nexa-Trial-Regular.ttf");
 }
 
-@font-face { 
+@font-face {
   font-family: "Nexa";
   font-style: normal;
   font-weight: 300;
@@ -74,7 +73,7 @@ button {
   padding: 0;
   cursor: pointer;
   border: 0;
-  background-color: #F2F4F5;
+  background-color: #f2f4f5;
   border-radius: 24px;
 }
 
@@ -84,9 +83,12 @@ a {
 }
 
 ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 h1,
@@ -102,3 +104,40 @@ fieldset {
   position: fixed;
   transform: scale(0);
 }
+
+/* swiper styles */
+.swiper-slide {
+  max-width: 296px;
+}
+
+.swiper-wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+  background: #f2f4f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  border-radius: 0;
+  color: #adafb0;
+}
+
+.custom-swiper-button-prev {
+  left: 0;
+}
+
+.custom-swiper-button-next {
+  right: 0;
+}
+/* swiper styles end */

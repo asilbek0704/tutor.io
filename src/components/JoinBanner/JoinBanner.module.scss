@@ -1,0 +1,65 @@
+.banner {
+  padding: 56px 64px;
+  background: #f2f4f5;
+  display: grid;
+  grid-template-areas: "text img";
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 64px 128px;
+  border-radius: 64px;
+
+  .content {
+    grid-area: text;
+    max-width: 610px;
+  }
+
+  .img {
+    grid-area: img;
+    width: 364px;
+    height: 416px;
+  }
+}
+
+.text {
+  color: #171717;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas: "join detailed";
+  gap: 16px;
+  justify-content: start;
+}
+
+.joinBtn {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  padding: 32px;
+  border-radius: 48px;
+  background: #7232F2;
+  grid-area: join;
+  transition: .2s;
+
+  &:hover {
+    opacity: .85;
+  }
+}
+
+.detailedBtn {
+  font-size: 28px;
+  font-weight: 700;
+  color: #7232F2;
+  padding: 32px;
+  border-radius: 48px;
+  background: #fff;
+  grid-area: detailed;
+  transition: .2s;
+
+  &:hover {
+    opacity: .85;
+  }
+}

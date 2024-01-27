@@ -1,0 +1,31 @@
+.link {
+  max-width: 296px;
+  max-height: 250px;
+  padding: 32px 24px;
+  background: #fff;
+  color: #171717;
+  border-radius: 48px;
+  display: grid;
+  grid-template-areas:
+    "img"
+    "title";
+  gap: 16px;
+  justify-content: center;
+  transition: .2s linear;
+
+  &:hover {
+    background: #7232F2;
+    color: #fff;
+  }
+
+  .img {
+    grid-area: img;
+  }
+
+  .title {
+    grid-area: title;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
