@@ -1,0 +1,33 @@
+.search {
+  position: relative;
+}
+
+.input {
+  color: #3b3b3b;
+  background: #f2f4f5;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  padding-block: 18px;
+  padding-left: 68px;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+
+  &::placeholder {
+    color: #cacccd;
+  }
+}
+
+.icon {
+  display: flex;
+  color: #cacccd;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 32px;
+
+  &.active {
+    color: #3b3b3b;
+  }
+}

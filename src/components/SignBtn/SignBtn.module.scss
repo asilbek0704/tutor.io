@@ -1,0 +1,23 @@
+.sign {
+  padding: 24px 32px;
+  color: #fff;
+  background: #7232f2;
+  border-radius: 24px;
+  width: fit-content;
+  display: grid;
+  grid-template-areas: "icon text";
+  gap: 12px;
+
+  .text {
+    grid-area: "text";
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .icon {
+    grid-area: "icon";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,57 @@
+.header {
+  padding-block: 36px;
+  border-radius: 0px 0px 48px 48px;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.12);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: grid;
+  grid-template-areas: "logo message";
+  align-items: center;
+  gap: 24px;
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .message {
+    grid-area: message;
+  }
+}
+
+.searchBar {
+  display: grid;
+  grid-template-areas: "search filter";
+  gap: 16px;
+  align-items: center;
+
+  .search {
+    grid-area: search;
+  }
+
+  .filter {
+    grid-area: filter;
+  }
+}
+
+.settings {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "left right";
+  gap: 24px;
+
+  .lang {
+    grid-area: left;
+  }
+
+  .sign,
+  .profile {
+    grid-area: right;
+  }
+}

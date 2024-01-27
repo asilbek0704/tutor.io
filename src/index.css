@@ -1,29 +1,30 @@
-@font-face {
+@font-face { 
   font-family: "Nexa";
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/Nexa-Trial-ExtraBold.ttf") format("ttf");
+  src: url("/fonts/Nexa-Trial-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: "Nexa";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/Nexa-Trial-Bold.ttf") format("ttf");
+  src: url("/fonts/Nexa-Trial-Bold.ttf");
 }
+
 
 @font-face {
   font-family: "Nexa";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/Nexa-Trial-Regular.ttf") format("ttf");
+  src: url("/fonts/Nexa-Trial-Regular.ttf");
 }
 
-@font-face {
+@font-face { 
   font-family: "Nexa";
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/Nexa-Trial-Light.ttf") format("ttf");
+  src: url("/fonts/Nexa-Trial-Light.ttf");
 }
 
 html {
@@ -73,7 +74,8 @@ button {
   padding: 0;
   cursor: pointer;
   border: 0;
-  background-color: transparent;
+  background-color: #F2F4F5;
+  border-radius: 24px;
 }
 
 a {
