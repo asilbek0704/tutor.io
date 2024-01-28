@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { getRating } from "../../helpers/stars";
 import s from "./TutorCard.module.scss";
 
@@ -25,9 +26,9 @@ export const TutorCard = ({name, img, rating, reviews, subjects}) => (
         </ul>
       </div>
 
-      <a className={s.contactBtn} href="#!">
+      <Link to="/chats" className={s.contactBtn}>
         Связаться
-      </a>
+      </Link>
     </div>
   </article>
 );
