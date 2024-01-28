@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import s from "./Categories.module.scss";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Categories = () => {
   const [categories, setCategories] = useState([]);
@@ -26,9 +27,9 @@ export const Categories = () => {
 
         {categories.map((item, i) => (
           <li key={i}>
-            <a href="#!" className={s.link}>
+            <Link to="" className={s.link}>
               {item.category}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

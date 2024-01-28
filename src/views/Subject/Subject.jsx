@@ -5,7 +5,7 @@ import { Container } from "../Container/Container";
 import s from "./Subject.module.scss";
 import { TutorCard } from "../../components/TutorCard/TutorCard";
 import { Slider } from "../Slider/Slider";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export const Subject = () => {
   const { subject } = useParams();
@@ -30,7 +30,7 @@ export const Subject = () => {
       <section className={s.subject}>
         <Container>
           <h2 className={s.title}>
-            <a href="/">
+            <Link to="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -43,7 +43,7 @@ export const Subject = () => {
                   fill="currentColor"
                 />
               </svg>
-            </a>
+            </Link>
             Подборка <b>“{subject}”</b>
           </h2>
 
