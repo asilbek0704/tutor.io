@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import s from "./RoleCard.module.scss";
 
 export const RoleCard = ({ role, descr, img }) => (
@@ -9,8 +10,8 @@ export const RoleCard = ({ role, descr, img }) => (
       <img src={img} alt="" />
     </figure>
 
-    <a className={s.btn} href="#!">
+    <Link to="/" className={s.btn}>
       Создать аккаунт
-    </a>
+    </Link>
   </article>
 );

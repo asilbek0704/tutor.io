@@ -1,8 +1,9 @@
 import classNames from "classnames";
 import s from "./SignBtn.module.scss";
+import { Link } from "react-router-dom";
 
 export const SignBtn = ({className}) => (
-  <a href="#!" className={classNames(s.sign, className)}>
+  <Link to="/login" className={classNames(s.sign, className)}>
     <div className={s.icon}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -19,5 +20,5 @@ export const SignBtn = ({className}) => (
     </div>
 
     <p className={s.text}>Войти</p>
-  </a>
+  </Link>
 );

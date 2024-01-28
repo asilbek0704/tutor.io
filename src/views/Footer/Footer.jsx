@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { Logo } from "../../components/Logo/Logo";
 import { Container } from "../Container/Container";
 import s from "./Footer.module.scss";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => (
   <footer className={s.footer}>
@@ -48,19 +49,19 @@ export const Footer = () => (
         <nav className={s.navigation}>
           <ul className={s.list}>
             <li>
-              <a className={classNames(s.link, s.active)} href="#!">
+              <NavLink to="/" className={classNames(s.link, s.active)}>
                 Главная
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className={s.link} href="#!">
+              <NavLink to="/chats" className={s.link}>
                 Сообщения
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className={s.link} href="#!">
+              <NavLink to="about" className={s.link}>
                 О нас
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>

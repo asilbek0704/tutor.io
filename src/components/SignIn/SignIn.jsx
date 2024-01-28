@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import { Container } from "../../views/Container/Container";
 import s from "./SignIn.module.scss";
 
@@ -32,10 +33,10 @@ export const SignIn = () => (
       </form>
 
       <p className={s.text}>
-        Еще нет аккаунта?{" "}
-        <a href="#!" className={s.link}>
+        Еще нет аккаунта?&nbsp;
+        <Link to="/signup" className={s.link}>
           Создать аккаунт
-        </a>
+        </Link>
       </p>
     </div>
   </Container>

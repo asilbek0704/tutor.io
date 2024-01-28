@@ -14,7 +14,7 @@ export const Header = ({
   hideSearchBar,
   hideLangBtn,
   hideMessageBtn,
-  noShadow,
+  noShadow
 }) => {
   return (
     <header className={classNames(s.header, noShadow ? "no-shadow " : null)}>

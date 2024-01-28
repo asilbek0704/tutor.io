@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container } from "../../views/Container/Container";
 import s from "./JoinBanner.module.scss";
 
@@ -16,7 +17,7 @@ export const JoinBanner = () => (
         </p>
 
         <div className={s.buttons}>
-          <a href="#!" className={s.joinBtn}>Стать репетитором</a>
+          <Link to="/signup" className={s.joinBtn}>Стать репетитором</Link>
           <a href="#!" className={s.detailedBtn}>Подробнее</a>
         </div>
       </div>
