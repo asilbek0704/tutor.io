@@ -1,0 +1,43 @@
+.info {
+  margin-block: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  color: #7232f2;
+  font-size: 128px;
+  font-weight: 700;
+}
+
+.text {
+  color: #171717;
+  max-width: 445px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin-block: 32px 64px;
+}
+
+.btn {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  background: #7232F2;
+  padding: 32px;
+  border-radius: 24px;
+  line-height: 1;
+  transition: .2s;
+
+  &:hover {
+    opacity: .8;
+  }
+}

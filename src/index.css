@@ -105,6 +105,10 @@ fieldset {
   transform: scale(0);
 }
 
+.no-shadow {
+  box-shadow: none;
+}
+
 /* swiper styles */
 .swiper-slide {
   max-width: 296px;

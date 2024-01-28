@@ -1,0 +1,28 @@
+.tutors {
+  padding-block: 64px 48px;
+}
+
+.sorting {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+
+.search {
+  width: 100%;
+}
+
+.search input {
+  width: 100%;
+}
+
+.filter {
+  min-width: fit-content;
+  
+  &:hover {
+    color: #7232F2;
+  }
+}

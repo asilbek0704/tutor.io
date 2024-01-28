@@ -1,11 +1,20 @@
 .btn {
   padding: 28px 26px;
-  color: #ADAFB0;
+  color: #adafb0;
   display: flex;
-  transition: .2s;
-
+  align-items: center;
+  gap: 12px;
+  transition: 0.2s;
 
   &:hover {
-    color: #3B3B3B;
+    color: #3b3b3b;
+  }
+
+  svg {
+    grid-area: icon;
+  }
+
+  span {
+    grid-area: text;
   }
 }

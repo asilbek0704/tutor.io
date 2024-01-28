@@ -1,15 +1,13 @@
-import { Footer } from "./views/Footer/Footer"
-import { Header } from "./views/Header/Header"
-import { Main } from "./views/Main/Main"
+// import { NotFound } from "./routes/404"
+import { Home } from "./routes/Home"
+// import { Registration } from "./routes/Registration"
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <Home />
+    // <NotFound />
+    // <Registration />
   )
 }
 

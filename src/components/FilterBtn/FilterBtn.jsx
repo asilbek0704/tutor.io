@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import s from "./FilterBtn.module.scss";
 
-export const FilterBtn = ({ className }) => (
+export const FilterBtn = ({ className, children }) => (
   <button className={classNames(s.btn, className)}>
     <svg
       width="28"
@@ -16,5 +16,7 @@ export const FilterBtn = ({ className }) => (
         fill="currentColor"
       />
     </svg>
+
+    {children}
   </button>
 );
