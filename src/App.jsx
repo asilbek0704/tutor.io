@@ -1,8 +1,8 @@
 // import { NotFound } from "./routes/404"
 // import { Home } from "./routes/Home"
 // import { Registration } from "./routes/Registration"
-
-import { Login } from "./routes/Login"
+// import { Login } from "./routes/Login"
+import { Result } from "./routes/Result"
 
 function App() {
 
@@ -10,7 +10,8 @@ function App() {
     // <Home />
     // <NotFound />
     // <Registration />
-    <Login />
+    // <Login />
+    <Result />
   )
 }
 
