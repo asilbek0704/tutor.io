@@ -10,7 +10,6 @@
   gap: 16px;
 }
 
-
 .search {
   width: 100%;
 }
@@ -21,8 +20,30 @@
 
 .filter {
   min-width: fit-content;
-  
+
   &:hover {
-    color: #7232F2;
+    color: #7232f2;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-block: 32px 40px;
+}
+
+.load {
+  width: 100%;
+  color: #171717;
+  font-size: 28px;
+  font-weight: 700;
+  border-radius: 24px;
+  background: #f2f4f5;
+  padding: 32px;
+  transition: .2s;
+
+  &:hover {
+    opacity: .7;
   }
 }
