@@ -11,6 +11,7 @@ export const Chats = () => (
           background: "#7232F2",
           borderRadius: "32px",
           width: "100%",
+          margin: 0
         }}
       />
       <figure>
