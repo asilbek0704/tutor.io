@@ -30,7 +30,7 @@ export const SignIn = () => {
             placeholder="Введите пароль"
           />
 
-          <Link to="/" className={s.submit}>Войти</Link>
+          <Link to="/?authorized=true" className={s.submit}>Войти</Link>
         </form>
 
         <p className={s.text}>

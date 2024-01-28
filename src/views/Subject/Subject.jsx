@@ -5,8 +5,12 @@ import { Container } from "../Container/Container";
 import s from "./Subject.module.scss";
 import { TutorCard } from "../../components/TutorCard/TutorCard";
 import { Slider } from "../Slider/Slider";
+import { useParams } from "react-router-dom";
 
 export const Subject = () => {
+  const { subject } = useParams();
+
+
   const [tutorsList, setTutorsList] = useState([]);
   const API_URL =
     "https://tutor-bed3b-default-rtdb.asia-southeast1.firebasedatabase.app";
@@ -15,10 +19,11 @@ export const Subject = () => {
     fetch(`${API_URL}/tutors.json`)
       .then((res) => res.json())
       .then((tutors) => {
-        setTutorsList(tutors);
+        const filtered = tutors.filter((item) => item.subjects.includes(subject));
+        setTutorsList(filtered)
       })
       .catch((err) => console.log(err.message));
-  }, []);
+  }, [subject]);
 
   return (
     <>
@@ -39,7 +44,7 @@ export const Subject = () => {
                 />
               </svg>
             </a>
-            Подборка <b>“Алгебра”</b>
+            Подборка <b>“{subject}”</b>
           </h2>
 
           <div className={s.sorting}>
