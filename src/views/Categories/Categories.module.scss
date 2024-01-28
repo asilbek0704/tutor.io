@@ -18,8 +18,14 @@
   background: #F2F4F5;
   padding: 12px 20px;
   display: block;
+  transition: .2s;
 
   &.active {
+    background: #7232F2;
+    color: #fff;
+  }
+
+  &:hover {
     background: #7232F2;
     color: #fff;
   }
